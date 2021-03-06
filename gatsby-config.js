@@ -6,6 +6,10 @@ module.exports = {
   plugins: [
     'gatsby-plugin-emotion',
     'gatsby-plugin-react-helmet',
+    'gatsby-transformer-sharp',
+    'gatsby-plugin-sharp',
+    'gatsby-background-image',
+
     {
       resolve: 'gatsby-plugin-mdx',
       options: {
@@ -19,6 +23,13 @@ module.exports = {
       options: {
         name: `./src/post`,
         path: `./src/post`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `./static/images`,
+        path: `./static/images`,
       },
     },
   ],
