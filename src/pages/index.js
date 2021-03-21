@@ -11,7 +11,9 @@ export default () => {
   return (
     <>
       <Hero />
+      
       <Layout>
+      <h3>Mira esto.</h3>
         {posts.map(post => (
           <PostPreview key={post.slug} post={post} />
         ))}

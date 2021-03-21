@@ -13,7 +13,7 @@ const TextBox = styled('div')`
   background-image: linear-gradient(to top, #ffdb00dd 2rem, #ffdb0000);
   display: flex;
   flex-direction: column;
-  height: 340px;
+  height: 100%;
   justify-content: flex-end;
   padding: 0 calc((100vw - 550px) / 3) 2rem;
   width: 100%;
